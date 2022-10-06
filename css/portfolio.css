@@ -33,12 +33,6 @@
   margin-bottom: 4px;
 }
 
-.portfolio .link {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .portfolio .type {
   font-size: 16px;
   line-height: 1.88;
