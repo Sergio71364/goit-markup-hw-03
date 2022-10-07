@@ -32,13 +32,17 @@
 .branches .list,
 .team .list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features .item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 3 * 30px) / 4);
 }
 
-.features .item:not(:last-child),
+.features .item:not(:nth-of-type(4n + 4)) {
+  margin-right: 30px;
+}
+
 .branches .item:not(:last-child),
 .team .item:not(:last-child) {
   margin-right: 30px;
