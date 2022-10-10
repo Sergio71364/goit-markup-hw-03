@@ -110,6 +110,28 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-nav .link::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.envelope::before {
+  background-image: url('../images/originals/envelope.svg');
+}
+
+.smartphone::before {
+  background-image: url('../images/originals/smartphone.svg');
 }
 
 .header .item:not(:last-child) {
@@ -119,6 +141,7 @@ body {
 .header .contacts-nav {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .active,
